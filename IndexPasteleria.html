@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Míster Cupcake</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\LogoFull.png" alt="Logo Pastelería" width="600px" height="261px">
+        <h2>Míster Cupcake</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastelería Home.html">Home</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pasteles.html">Pasteles</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\PastelCustom.html">Personaliza tu Pastel</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Administrador.html">Administrador</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Historia</h1>
+            <p>Nuestra pasión por la repostería nos ha inspirado a hornear el mejor pan, crear pasteles únicos, servir el mejor café pero sobre todo a reinventarnos e innovar todos los días.
+            <br>Cada uno de nuestros invitados nos inspira a llegar más lejos brindándoles un servicio de gran calidad y el toque de sabor a sus mañanas, tardes, meriendas y celebraciones.</p>
+            <h1>Pasteles y Pan</h1>
+            <table>
+                <tr>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel1.jpg" alt="Logo Pastelería" width="200px" height="102px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel2.jpg" alt="Logo Pastelería" width="200px" height="102px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel3.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel4.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel5.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel6.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <p>Míster Cupcake</p>
+        <p>Dirección: Av. Montevideo #365, Colonia Lindavista, Ciudad de México, México</p>
+        <p>Teléfono: 5528592056</p>
+        <p>Horario de Atención: Lunes a Domingo de 10:00 AM a 10:00 PM</p>
+        <img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Logo.png" alt="Logo Pastelería" width="214px" height="261px">
+    </footer>
+
+</body>
+
+</html>

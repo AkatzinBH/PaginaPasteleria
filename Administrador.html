@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Míster Cupcake Administrador</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 500px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 500px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        table,td {
+	    border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\LogoFull.png" alt="Logo Pastelería" width="300px" height="130.5px">
+        <h2>Míster Cupcake</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastelería Home.html">Home</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pasteles.html">Pasteles</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\PastelCustom.html">Personaliza tu Pastel</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Administrador.html">Administrador</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Administrador</h1>
+            <p>Aquí podrás ver todos los pedidos por hacer.
+            <br>Solo inicia Sesión con la cuenta de Administrador.</p>
+            <h1>Ordenes Pendientes</h1>
+            <table>
+                <tr>
+                    <th>Orden</th>
+                    <th>Nombre</th>
+                    <th>Mail</th>
+                    <th>Teléfono</th>
+                    <th>Cubierta</th>
+                    <th>Relleno</th>
+                    <th>Toppings</th>
+                    <th>Fecha</th>
+                    <th>Imagen</th>
+                    <th>Costo</th>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Maria Anders</td>
+                    <td>Mari@outlook.com</td>
+                    <td>5512365980</td>
+                    <td>Chocolate</td>
+                    <td>Vainilla</td>
+                    <td>Frutos Rojos</td>
+                    <td>05/07/2022</td>
+                    <td>No</td>
+                    <td>$250</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Mari@outlook.com</td>
+                    <td>5613321528</td>
+                    <td>Chocolate</td>
+                    <td>Zanahoria</td>
+                    <td>Fresas</td>
+                    <td>22/06/2022</td>
+                    <td>No</td>
+                    <td>$250</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Francisco Chang</td>
+                    <td>Chang@outlook.com</td>
+                    <td>5569256418</td>
+                    <td>Chocolate</td>
+                    <td>Vainilla</td>
+                    <td>Nuez</td>
+                    <td>07/04/2022</td>
+                    <td>No</td>
+                    <td>$250</td>
+                </tr>
+
+
+            </table>
+            
+        
+            <h1>Ordenes Completadas</h1>
+            <table>
+                <tr>
+                    <th>Orden</th>
+                    <th>Nombre</th>
+                    <th>Mail</th>
+                    <th>Teléfono</th>
+                    <th>Cubierta</th>
+                    <th>Relleno</th>
+                    <th>Toppings</th>
+                    <th>Fecha</th>
+                    <th>Imagen</th>
+                    <th>Costo</th>
+                    </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ana María García</td>
+                    <td>Lana@outlook.com</td>
+                    <td>9512256846</td>
+                    <td>Chantilly</td>
+                    <td>Zanahoria</td>
+                    <td>Nuez</td>
+                    <td>17/02/2022</td>
+                    <td>No</td>
+                    <td>$250</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Amelia Hernández</td>
+                    <td>Amelia@outlook.com</td>
+                    <td>5513320129</td>
+                    <td>Chocolate Blanco</td>
+                    <td>Vainilla</td>
+                    <td>Nuez</td>
+                    <td>28/02/2022</td>
+                    <td>No</td>
+                    <td>$250</td>
+                </tr>
+            
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <p>Míster Cupcake</p>
+        <p>Dirección: Av. Montevideo #365, Colonia Lindavista, Ciudad de México, México</p>
+        <p>Teléfono: 5528592056</p>
+        <p>Horario de Atención: Lunes a Domingo de 10:00 AM a 10:00 PM</p>
+        <img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Logo.png" alt="Logo Pastelería" width="107px" height="130.5px">
+    </footer>
+
+</body>
+
+</html>

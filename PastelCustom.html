@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Míster Cupcake Pastel Custom</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 1500px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 1500px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\LogoFull.png" alt="Logo Pastelería" width="300px" height="130.5px">
+        <h2>Míster Cupcake</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastelería Home.html">Home</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pasteles.html">Pasteles</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\PastelCustom.html">Personaliza tu Pastel</a></li>
+                <li><a href="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Administrador.html">Administrador</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Personaliza tu Pastel</h1>
+            <p>Aquí podrás personalizar tu pastel con los ingredientes que desees.
+            <br>Si deseas tu Pastel para entrega inmediata, Haz clic en el enlace de la izquierda "Pasteles".</p>
+            <h1>Pasteles y Pan (Para entrega Inmediata)</h1>
+            <table>
+                <tr>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel1.jpg" alt="Logo Pastelería" width="200px" height="102px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel2.jpg" alt="Logo Pastelería" width="200px" height="102px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel3.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel4.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel5.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+                    <th><img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Pastel6.jpg" alt="Logo Pastelería" width="200px" height="100px"></th>
+            </table>
+            <hr>
+
+            <h2>Personaliza tu pastel</h2>
+
+            <label for="nombre">Escribe tu Nombre Completo</label><br>
+            <input type="Name" id="nombre1" name="nombre1"><br><br>
+
+            <label for="correo1">Escribe tu Correo Electrónico</label><br>
+            <input type="email" id="correo1" name="correo1"><br><br>
+            
+            <label for="tel1">Escribe tu número de Teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+            <hr>
+
+            <h2>Elige el sabor de la cubierta del Pastel (Pueden ser varias opciones)</h2><br>
+            <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+            <label for="topping1">Chocolate - $100</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+            <label for="topping2">Chocolate Blanco - $100</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+            <label for="topping3">Chantilly - $100</label><br><br>
+            
+            <h2>Elige el sabor del relleno del Pastel (Solo una opción)</h2><br>
+            <input type="radio" id="roja" name="salsas" value="Roja">
+            <label for="roja">Chocolate - $100</label><br>
+            <input type="radio" id="verde" name="salsas" value="Verde">
+            <label for="verde">Vainilla - $100</label><br>
+            <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+            <label for="guacamole">Zanahoria - $100</label><br><br>
+
+            <h2>Elige los Toppings</h2>
+            <label for="tacos">Toppings</label>
+            <select id="tacos" name="tacos">
+                <option value="suadero">Nuez $150</option>
+                <option value="pastor">Frutos Rojos $100</option>
+                <option value="campechanos">Fresas $80</option>
+                <option value="tripa">Chocolate Rayado $50</option>
+                <option value="tripa">Sin Toppings - $0</option>
+            </select>
+            
+            
+            <hr>
+            
+            <h2>Elige la Fecha y Hora para la entrega de tu orden</h2><br>
+
+            <input type="datetime-local" id="fecha2" name="fecha2"><br>
+
+            
+            <hr>
+            
+            <h2>¿Te gustaría que el pastel lleve una imagen?</h2><br>
+            <p>Elige una Imagen</p>
+            <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+            <hr>
+            <h2>Si estás listo, realiza tu pedido.</h2><br>
+            <input type="button" id="boton1" name="boton1" value="Finalizar Pedido" onclick="alert('Pedido Hecho con Éxito');"><br><br>
+        </article>
+    </section>
+
+    <footer>
+        <p>Míster Cupcake</p>
+        <p>Dirección: Av. Montevideo #365, Colonia Lindavista, Ciudad de México, México</p>
+        <p>Teléfono: 5528592056</p>
+        <p>Horario de Atención: Lunes a Domingo de 10:00 AM a 10:00 PM</p>
+        <img src="C:\Users\karri\Desktop\Launch X\FrontEnd\HTML\Pastelería\Logo.png" alt="Logo Pastelería" width="107px" height="130.5px">
+    </footer>
+
+</body>
+
+</html>
